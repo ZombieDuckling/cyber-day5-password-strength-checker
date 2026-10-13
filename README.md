@@ -61,6 +61,8 @@ Optional:
 
 - Show the real password in output (default masks it):
   - `python3 password_strength_checker.py "MyTestPass123!" --show-password`
+- Run the characterization tests:
+  - `python3 -m pytest -q`
 
 ## Example output
 
@@ -77,7 +79,7 @@ Why this score:
   - +18: Estimated entropy is 63.2 bits (good).
 
 How to improve:
-  - Use at least 16 characters.
+  - Use at least 12 characters (16+ is better).
   - Avoid predictable sequences like '1234' or 'abcd'.
 ```
 
